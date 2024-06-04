@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8">
+    <title>צפייה במשמרות</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="nav-brand">
+            <img src="../src/images/logo.png" alt="Logo">
+          </a>
+          <ul class="nav-menu without-auth">
+            <li class="nav__item">
+              <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__item">
+              <a href="regpage.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__item">
+              <a href="help.html" class="nav__link">Need Help?</a>
+            </li>
+          </ul>
+          <ul class="nav-menu with-auth">
+            <li class="nav__item">
+              <a href="profile.html" class="nav__link">Hi <span id="user-name"></span></a>
+            </li>
+            <li class="nav__item">
+              <a href="help.html" class="nav__link">Need Help?</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__link" id="logoutBtn">Logout</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>צפייה במשמרות</h2>
+      <div id="table-container">
+        <table id="shifts-table">
+          <thead>
+            <tr>
+              <th>שעת התחלה</th>
+              <th>שעת סיום</th>
+              <th>שכר שעתי</th>
+              <th>תפקיד</th>
+              <th>מיקום</th>
+              <th>תאריך משמרת</th>
+              <th>מחיקה</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- משמרות יוצגו כאן -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script type="module" src="../src/js/view-shifts.js"></script>
+  </body>
+</html>
